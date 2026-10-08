@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tsbuildinfo
+site-source.tar.gz
+.openai/
+*.zip
+.env
+.env.*
+!.env.example

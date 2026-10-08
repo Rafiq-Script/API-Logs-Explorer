@@ -1,0 +1,33 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f7f8fc;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+.topline { height: 4px; background: linear-gradient(90deg, #2563eb, #6366f1, #22d3ee); }
+header { height: 72px; background: rgba(255, 255, 255, .92); border-bottom: 1px solid #e2e8f0; }
+.header-inner, main { max-width: 1100px; margin: 0 auto; padding: 0 28px; }
+.header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 14px; }
+.brand-icon, .guide-icon { display: grid; place-items: center; color: white; background: #0f172a; }
+.brand-icon { width: 40px; height: 40px; border-radius: 12px; }
+.brand b, .brand small, .guide-steps b, .guide-steps small { display: block; }
+.brand small { margin-top: 3px; color: #64748b; font-size: 12px; }
+.template-badge { padding: 7px 10px; border: 1px solid #dbeafe; border-radius: 999px; background: #eff6ff; color: #2563eb; font-size: 12px; font-weight: 700; }
+main { min-height: calc(100vh - 76px); display: grid; place-items: center; padding-top: 48px; padding-bottom: 48px; }
+.guide-card { width: min(100%, 720px); padding: 44px; background: #fff; border: 1px solid #e2e8f0; border-radius: 20px; box-shadow: 0 18px 45px rgba(15, 23, 42, .06); }
+.guide-icon { width: 58px; height: 58px; margin-bottom: 25px; border-radius: 18px; background: linear-gradient(135deg, #0f172a, #334155); }
+.eyebrow { margin: 0 0 8px; color: #2563eb; font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+h1 { margin: 0; color: #0f172a; font-size: clamp(28px, 4vw, 38px); letter-spacing: -1.4px; }
+.guide-text { max-width: 610px; margin: 14px 0 30px; color: #64748b; font-size: 16px; line-height: 1.65; }
+.guide-steps { display: grid; gap: 2px; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; }
+.guide-steps > div { display: flex; gap: 13px; align-items: flex-start; padding: 16px; background: #f8fafc; }
+.guide-steps > div + div { border-top: 1px solid #e2e8f0; }
+.guide-steps svg { flex: 0 0 auto; margin-top: 2px; color: #2563eb; }
+.guide-steps b { margin-bottom: 3px; font-size: 14px; }
+.guide-steps small { color: #64748b; font-size: 13px; line-height: 1.4; }
+code { padding: 1px 5px; border-radius: 4px; background: #e2e8f0; color: #334155; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+@media (max-width: 600px) { .header-inner, main { padding-left: 16px; padding-right: 16px; } .guide-card { padding: 28px 22px; } .template-badge { display: none; } }
